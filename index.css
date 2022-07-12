@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* 容器 */
+.container {
+  height: 500px;
+  width: 100%;
+  outline: 1px solid red;
+  position: relative;
+}
+
+/* 头部导航 */
+.top-nav {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* 背景图片 */
+.imgs {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.imgs a {
+  /* 未激活状态隐藏 */
+  display: none;
+  height: 500px;
+  /* 动态生成背景图、背景色 */
+  /* background-image: url("https://puui.qpic.cn/media_img/lena/PICvqg2sg_580_1680/0"); */
+  /* background-color: rgb(1, 9, 30); */
+  /* 水平方向居中，垂直方向不管 */
+  background-position: center 0;
+  /* 图片不重复 */
+  background-repeat: no-repeat;
+}
+
+/* 背景图激活状态 */
+.imgs .active {
+  display: block;
+}
+
+/* 左侧导航栏 */
+.side-bar {
+  height: 430px;
+  width: 350px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: rgba(15, 15, 30, 0.4);
+}
+
+.side-bar a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  margin-left: 45px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.side-bar img {
+  width: 16px;
+  height: 15px;
+  margin-left: -24px;
+}
+
+.side-bar .cnhz {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.side-bar .zbtj {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.side-bar .nav {
+  font-size: 0px;
+}
+
+.side-bar .nav span {
+  font-size: 16px;
+}
+
+.side-bar .active {
+  font-size: 16px;
+  color: #ff5c38;
+  /* 溢出部分打点 （没有宽度，就没办法打点）*/
+  width: 305px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.side-bar .active span {
+  font-size: 22px;
+}
